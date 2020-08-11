@@ -1,0 +1,418 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{F726B177-FFAB-46B4-9A04-DB7FC676930A}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ProjetDuStage</RootNamespace>
+    <AssemblyName>ProjetDuStage</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Bunifu_UI_v1.5.3">
+      <HintPath>..\..\..\..\..\Downloads\buni\Bunifu_UI_v1.5.3.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AccueilAdministrateur.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AccueilAdministrateur.Designer.cs">
+      <DependentUpon>AccueilAdministrateur.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AccueilCilent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AccueilCilent.Designer.cs">
+      <DependentUpon>AccueilCilent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CreationCompte.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CreationCompte.Designer.cs">
+      <DependentUpon>CreationCompte.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Globale.cs" />
+    <Compile Include="GérerCeentreFormation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GérerCeentreFormation.Designer.cs">
+      <DependentUpon>GérerCeentreFormation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GérerFormateur.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GérerFormateur.Designer.cs">
+      <DependentUpon>GérerFormateur.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GérerFormation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GérerFormation.Designer.cs">
+      <DependentUpon>GérerFormation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GérerModule.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GérerModule.Designer.cs">
+      <DependentUpon>GérerModule.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GérerUtilisateur.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GérerUtilisateur.Designer.cs">
+      <DependentUpon>GérerUtilisateur.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LesFormsIdenticication\Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LesFormsIdenticication\Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UserControl1FormateurAff.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl1FormateurAff.Designer.cs">
+      <DependentUpon>UserControl1FormateurAff.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControlCentreAfficher.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControlCentreAfficher.Designer.cs">
+      <DependentUpon>UserControlCentreAfficher.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControlCentreAjouter.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControlCentreAjouter.Designer.cs">
+      <DependentUpon>UserControlCentreAjouter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControlCentreModifier.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControlCentreModifier.Designer.cs">
+      <DependentUpon>UserControlCentreModifier.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControlCentreSupprimer.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControlCentreSupprimer.Designer.cs">
+      <DependentUpon>UserControlCentreSupprimer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControlCompte.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControlCompte.Designer.cs">
+      <DependentUpon>UserControlCompte.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControlFormateurAjout.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControlFormateurAjout.Designer.cs">
+      <DependentUpon>UserControlFormateurAjout.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControlFormateurModif.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControlFormateurModif.Designer.cs">
+      <DependentUpon>UserControlFormateurModif.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControlFormateurSpp.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControlFormateurSpp.Designer.cs">
+      <DependentUpon>UserControlFormateurSpp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControlFormationAffich.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControlFormationAffich.Designer.cs">
+      <DependentUpon>UserControlFormationAffich.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControlFormationAjout.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControlFormationAjout.Designer.cs">
+      <DependentUpon>UserControlFormationAjout.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControlFormationAjoutModule.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControlFormationAjoutModule.Designer.cs">
+      <DependentUpon>UserControlFormationAjoutModule.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControlFormationModif.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControlFormationModif.Designer.cs">
+      <DependentUpon>UserControlFormationModif.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControlFormationSupp.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControlFormationSupp.Designer.cs">
+      <DependentUpon>UserControlFormationSupp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControlFormationSuppModule.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControlFormationSuppModule.Designer.cs">
+      <DependentUpon>UserControlFormationSuppModule.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControlListeFormations.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControlListeFormations.Designer.cs">
+      <DependentUpon>UserControlListeFormations.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControlMesFormations.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControlMesFormations.Designer.cs">
+      <DependentUpon>UserControlMesFormations.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControlModuleAfficher.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControlModuleAfficher.Designer.cs">
+      <DependentUpon>UserControlModuleAfficher.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControlModuleAjout.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControlModuleAjout.Designer.cs">
+      <DependentUpon>UserControlModuleAjout.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControlModuleModif.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControlModuleModif.Designer.cs">
+      <DependentUpon>UserControlModuleModif.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControlModuleSupp.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControlModuleSupp.Designer.cs">
+      <DependentUpon>UserControlModuleSupp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControlS%27inscrireFormation.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControlS%27inscrireFormation.Designer.cs">
+      <DependentUpon>UserControlS%27inscrireFormation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControlUtilisateurAff.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControlUtilisateurAff.Designer.cs">
+      <DependentUpon>UserControlUtilisateurAff.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControlUtilisateurResultat.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControlUtilisateurResultat.Designer.cs">
+      <DependentUpon>UserControlUtilisateurResultat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UtilisateurAffichageParResultat.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UtilisateurAffichageParResultat.Designer.cs">
+      <DependentUpon>UtilisateurAffichageParResultat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UtilisateurModifierFormation.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UtilisateurModifierFormation.Designer.cs">
+      <DependentUpon>UtilisateurModifierFormation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UtilisateurSuppModuleFormation.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UtilisateurSuppModuleFormation.Designer.cs">
+      <DependentUpon>UtilisateurSuppModuleFormation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UtilisateurSupprimerFormation.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UtilisateurSupprimerFormation.Designer.cs">
+      <DependentUpon>UtilisateurSupprimerFormation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VariableGlobale.cs" />
+    <EmbeddedResource Include="AccueilAdministrateur.resx">
+      <DependentUpon>AccueilAdministrateur.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AccueilCilent.resx">
+      <DependentUpon>AccueilCilent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CreationCompte.resx">
+      <DependentUpon>CreationCompte.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GérerCeentreFormation.resx">
+      <DependentUpon>GérerCeentreFormation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GérerFormateur.resx">
+      <DependentUpon>GérerFormateur.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GérerFormation.resx">
+      <DependentUpon>GérerFormation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GérerModule.resx">
+      <DependentUpon>GérerModule.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GérerUtilisateur.resx">
+      <DependentUpon>GérerUtilisateur.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LesFormsIdenticication\Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="UserControl1FormateurAff.resx">
+      <DependentUpon>UserControl1FormateurAff.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControlCentreAfficher.resx">
+      <DependentUpon>UserControlCentreAfficher.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControlCentreAjouter.resx">
+      <DependentUpon>UserControlCentreAjouter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControlCentreModifier.resx">
+      <DependentUpon>UserControlCentreModifier.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControlCentreSupprimer.resx">
+      <DependentUpon>UserControlCentreSupprimer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControlCompte.resx">
+      <DependentUpon>UserControlCompte.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControlFormateurAjout.resx">
+      <DependentUpon>UserControlFormateurAjout.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControlFormateurModif.resx">
+      <DependentUpon>UserControlFormateurModif.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControlFormateurSpp.resx">
+      <DependentUpon>UserControlFormateurSpp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControlFormationAffich.resx">
+      <DependentUpon>UserControlFormationAffich.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControlFormationAjout.resx">
+      <DependentUpon>UserControlFormationAjout.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControlFormationAjoutModule.resx">
+      <DependentUpon>UserControlFormationAjoutModule.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControlFormationModif.resx">
+      <DependentUpon>UserControlFormationModif.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControlFormationSupp.resx">
+      <DependentUpon>UserControlFormationSupp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControlFormationSuppModule.resx">
+      <DependentUpon>UserControlFormationSuppModule.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControlListeFormations.resx">
+      <DependentUpon>UserControlListeFormations.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControlMesFormations.resx">
+      <DependentUpon>UserControlMesFormations.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControlModuleAfficher.resx">
+      <DependentUpon>UserControlModuleAfficher.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControlModuleAjout.resx">
+      <DependentUpon>UserControlModuleAjout.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControlModuleModif.resx">
+      <DependentUpon>UserControlModuleModif.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControlModuleSupp.resx">
+      <DependentUpon>UserControlModuleSupp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControlS%27inscrireFormation.resx">
+      <DependentUpon>UserControlS%27inscrireFormation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControlUtilisateurAff.resx">
+      <DependentUpon>UserControlUtilisateurAff.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControlUtilisateurResultat.resx">
+      <DependentUpon>UserControlUtilisateurResultat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UtilisateurAffichageParResultat.resx">
+      <DependentUpon>UtilisateurAffichageParResultat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UtilisateurModifierFormation.resx">
+      <DependentUpon>UtilisateurModifierFormation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UtilisateurSuppModuleFormation.resx">
+      <DependentUpon>UtilisateurSuppModuleFormation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UtilisateurSupprimerFormation.resx">
+      <DependentUpon>UtilisateurSupprimerFormation.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
